@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Don Ray</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo1.png">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Don Ray.</h1>
+        <h2>Frontend Developer / Enthusiast / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-telegram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-github"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works.</h1>
+        <section>
+            <h2>Our projects</h2>
+            <p>
+                Clean code and functional design make it easy to customize your site to meet your business needs. With functionality and adaptability, you can quickly and easily customize the look and feel of your site to create a unique experience for your visitors. We provide powerful tools for content management, analytics tracking and performance optimization. Our intuitive user interface makes it easy to control all aspects of your site, giving you more time to focus on growing your business.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;React</div>
+            </div>
+            <button class="btn_one">Zolotoi Kv</button>
+            <button class="btn_two">Telefusion</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                    Hi! My name is Daniyar Turdubekov, and I am a frontend developer. Since I'm often challenged, I'm constantly looking for new and interesting ways to learn and develop. This includes learning new technologies, experimenting with different tools and following trends in web development. I also have an interest in text and meaning analysis, which I've been interested in learning about through various professional experiences. Through all these experiences, my goal is to continue to challenge myself and reach new heights in my frontend development career.
+                </p>
+            </section>
+            <section>
+                <h2>skills</h2>
+                <p>
+                    I specialize in javascript, react, jquery, html, css and other related technologies. I have a passion for understanding and mastering complex coding problems, as well as keeping up with trends in web development. Passionate about creating beautiful websites that work easily on all devices, I strive to push myself further every day. My goal is to become the best front-end web developer I can be, using the latest technology and trends in web development. I am confident that my knowledge of these tools will help me achieve that goal!
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me:</h2>
+                <h3>turdubekovdoni87@gmail.com</h3>
+                <h3>https://www.linkedin.com/in/doni-turdubekov-8019aa265/</h3>
+                <p>
+                    <form>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="3"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form>
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            let's make this world <br> <a href="">better</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
